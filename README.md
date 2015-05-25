@@ -32,6 +32,10 @@ then:
 * in the path, there is no '/' at the beginning.
 * to enable livereload, a [livereload plugin](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) of the browser is needed and make sure it is switched on(the center circle of the icon be filled).
 
+###references:
+[http://www.gruntjs.net/](http://www.gruntjs.net/)
+
+[http://bellyang.com/blog/post-606.html](http://bellyang.com/blog/post-606.html)
 
 ------
 helicese@gmail.com
