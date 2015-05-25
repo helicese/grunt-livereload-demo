@@ -16,14 +16,14 @@ module.exports = function(grunt) {
       options: {
         port: 8000,
         hostname: 'localhost',
-        //声明给watch监听的端口
+        //the port for the watch task
         livereload: 35729
       },
       server: {
         options: {
-          open: true,//是否让浏览器自动开启
+          open: true,//let the browser run automatically
           base: [
-            'views' //主目录
+            'views' //the base path
           ]
         }
       }
@@ -48,12 +48,11 @@ module.exports = function(grunt) {
     },
   });
 
-  // 加载所有任务
+  // load all the tasks
   require('load-grunt-tasks')(grunt); 
-  // 默认被执行的任务列表。
   grunt.registerTask('default', ['uglify']);
   grunt.registerTask('serve', [ 'connect:server','watch']);
-  // grunt.registerTask('jshint',['jshint']);
+  // grunt.registerTask('jshint',['jshint']); !important(add this will make the task unusable)
   // grunt.registerTask('watch',['watch']);
   grunt.registerTask('console', 'a little trick',function(){
     console.log('something changed!');
