@@ -1,0 +1,16 @@
+h1{
+	color: blue ;
+	display: block;
+	border: 1px solid red;
+}
+
+#backgroundImage{
+	width: 1000px;
+	height:600px;
+	background-image: url("http://geteverything.org/wp-content/uploads/2013/08/13.png");
+	-webkit-background-size: initial;
+	background-size: initial;
+	border:1px solid blue;
+	background-position: 0px 10px;
+	background-repeat: repeat-x;
+}

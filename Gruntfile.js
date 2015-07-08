@@ -22,9 +22,10 @@ module.exports = function(grunt) {
       server: {
         options: {
           open: true,//let the browser run automatically
-          base: [
-            'views' //the base path
-          ]
+          //base define the root directory of the server, default to be the root where Gruntfile.js exists.
+          // base: [
+          //   'views' //the base path
+          // ]
         }
       }
     },
@@ -41,7 +42,7 @@ module.exports = function(grunt) {
         files: ['demojs/*.js','views/*.html','views/*.css'],
         tasks: ['jshint'],
         options: {
-          spawn: false,
+          spawn: false,//speed up the watch task
           livereload: '<%= connect.options.livereload %>'
         },
       },
